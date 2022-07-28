@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <!-- Link CSS Here -->
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="wrapper">
-        <!-- ForInput Field-->
-        <div class="w-100">
-            <input type="text" id="city" placeholder="Enter City Name">
-        </div>
-        <!--For Button-->
-        <div class="w-100" style="text-align: center;">
-            <button id="search">Search</button>
-        </div>
-        <!--For Result-->
-        <div class="w-100" id="result">
-            <div>Temperature : <span id="temp"></span>
-            </div>        
-        <div>
-            Max Temperature : <span id="max_temp"></span>
-        </div>
-        <div>
-            Min Temperature : <span id="min_temp"></span>
-        </div>
-        <div>
-            Humidity : <span id="humidity"></span>
-        </div>    
-        </div>
+  <!-- Container -->
+  <div class="wrapper">
+    <!-- Input field -->
+    <div class="w-100">
+      <input type="text" id="city" placeholder="Enter City Name">
     </div>
 
-<script src="./script.js"></script>    
+    <!-- Button -->
+    <div class="w-100" style="text-align: center;">
+      <button id="search">Search</button>
+    </div>
+
+
+    <!-- Result -->
+    <div class="w-100" id="result">
+      <div>
+        Temprature : <span id="temp"></span>
+      </div>
+      <div>
+        Max Temprature : <span id="max_temp"></span>
+      </div>
+      <div>
+        Min Temprature : <span id="min_temp"></span>
+      </div>
+      <div>
+        Humidity : <span id="humidity"></span>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- Link your JS files -->
+  <script src="./script.js"></script>
 </body>
 </html>
